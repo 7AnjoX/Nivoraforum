@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fórum Oficial • Nivora-RP</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #121212;
+            color: #f0f0f0;
+            line-height: 1.6;
+        }
+
+        /* Cabeçalho */
+        header {
+            background: linear-gradient(135deg, #ff3333, #cc0000);
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.7);
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 38px;
+            margin-bottom: 5px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        header p {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+
+        /* Barra de navegação */
+        nav {
+            background-color: #1e1e1e;
+            padding: 12px;
+            border-bottom: 2px solid #ff3333;
+        }
+
+        .nav-links {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: #f0f0f0;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: all 0.3s;
+        }
+
+        .nav-links a:hover {
+            background-color: #ff3333;
+            color: white;
+        }
+
+        /* Conteúdo principal */
+        .container {
+            max-width: 1100px;
+            margin: 25px auto;
+            padding: 0 20px;
+        }
+
+        .secao {
+            background-color: #1e1e1e;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            overflow: hidden;
+            box-shadow: 0 0 12px rgba(0,0,0,0.5);
+            border: 1px solid #333;
+        }
+
+        .secao-titulo {
+            background: linear-gradient(135deg, #ff3333, #cc0000);
+            padding: 15px;
+            font-size: 22px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .topico {
+            padding: 18px;
+            border-bottom: 1px solid #333;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.2s;
+        }
+
+        .topico:last-child {
+            border-bottom: none;
+        }
+
+        .topico:hover {
+            background-color: #292929;
+        }
+
+        .topico-principal a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 19px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .topico-principal a:hover {
+            color: #ff5555;
+        }
+
+        .info {
+            color: #aaaaaa;
+            font-size: 14px;
+            margin-top: 4px;
+        }
+
+        .estatisticas {
+            color: #ff3333;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #1e1e1e;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            border-top: 2px solid #ff3333;
+            color: #aaaaaa;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .topico {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+            .nav-links {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🚗 Fórum Oficial Nivora-RP</h1>
+        <p>O ponto de encontro da nossa comunidade!</p>
+    </header>
+
+    <nav>
+        <div class="nav-links">
+            <a href="index.html">🏠 Início</a>
+            <a href="#">📢 Avisos</a>
+            <a href="#">📜 Regras</a>
+            <a href="#">❓ Suporte</a>
+            <a href="#">👤 Entrar / Cadastrar</a>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <!-- SEÇÃO 1: AVISOS GERAIS -->
+        <div class="secao">
+            <div class="secao-titulo">📢 Avisos Oficiais</div>
+
+            <div class="topico">
+                <div class="topico-principal">
+                    <a href="#">🚀 Servidor Aberto para Todos!</a>
+                    <div class="info">Postado por: Administrador • 28/04/2026</div>
+                </div>
+                <div class="estatisticas">Visualizações: 124 • Respostas: 18</div>
+            </div>
+
+            <div class="topico">
+                <div class="topico-principal">
+                    <a href="#">📜 Atualização das Regras Gerais</a>
+                    <div class="info">Postado por: Moderador • 27/04/2026</div>
+                </div>
+                <div class="estatisticas">Visualizações: 98 • Respostas: 5</div>
+            </div>
+
+            <div class="topico">
+                <div class="topico-principal">
+                    <a href="#">🛠️ Manutenção Programada</a>
+                    <div class="info">Postado por: Equipe Técnica • 26/04/2026</div>
+                </div>
+                <div class="estatisticas">Visualizações: 76 • Respostas: 3</div>
+            </div>
+        </div>
+
+
+        <!-- SEÇÃO 2: COMUNIDADE -->
+        <div class="secao">
+            <div class="secao-titulo">👥 Comunidade Nivora-RP</div>
+
+            <div class="topico">
+                <div class="topico-principal">
+                    <a href="#">💬 Apresente-se! Quem é você?</a>
+                    <div class="info">Postado por: Moderador • 25/04/2026</div>
+                </div>
+                <div class="estatisticas">Visualizações: 210 • Respostas: 42</div>
+            </div>
+
+            <div class="topico">
+                <div class="topico-principal">
+                    <a href="#">📸 Compartilhe suas Melhores Fotos do Servidor</a>
+                    <div class="info">Postado por: Administrador • 24/04/2026</div>
+                </div>
+                <div class="estatisticas">Visualizações: 187 • Respostas: 29</div>
+            </div>
+        </div>
+
+
+        <!-- SEÇÃO 3: SUPORTE E DÚVIDAS -->
+        <div class="secao">
+            <div class="secao-titulo">❓ Suporte e Dúvidas</div>
+
+            <div class="topico">
+                <div class="topico-principal">
+                    <a href="#">🔒 Problemas para Entrar na Conta?</a>
+                    <div class="info">Postado por: Suporte • 28/04/2026</div>
+                </div>
+                <div class="estatisticas">Visualizações: 65 • Respostas: 7</div>
+            </div>
+
+            <div class="topico">
+                <div class="topico-principal">
+                    <a href="#">🏠 Como Comprar ou Vender Propriedades?</a>
+                    <div class="info">Postado por: Suporte • 27/04/2026</div>
+                </div>
+                <div class="estatisticas">Visualizações: 89 • Respostas: 12</div>
+            </div>
+
+            <div class="topico">
+                <div class="topico-principal">
+                    <a href="#">🚗 Dúvidas sobre Veículos e Garagens</a>
+                    <div class="info">Postado por: Suporte • 26/04/2026</div>
+                </div>
+                <div class="estatisticas">Visualizações: 72 • Respostas: 9</div>
+            </div>
+        </div>
+
+
+        <!-- SEÇÃO 4: ORGANIZAÇÕES E CARGOS -->
+        <div class="secao">
+            <div class="secao-titulo">👮 Organizações e Recrutamento</div>
+
+            <div class="topico">
+                <div class="topico-principal">
+                    <a href="#">👮 Polícia Civil • Abertura de Vagas</a>
+                    <div class="info">Postado por: Comandante • 28/04/2026</div>
+                </div>
+                <div class="estatisticas">Visualizações: 105 • Respostas: 14</div>
+            </div>
+
+            <div class="topico">
+                <div class="topico-principal">
+                    <a href="#">🚑 SAMU • Inscrições Abertas</a>
+                    <div class="info">Postado por: Diretor • 27/04/2026</div>
+                </div>
+                <div class="estatisticas">Visualizações: 83 • Respostas: 8</div>
+            </div>
+
+            <div class="topico">
+                <div class="topico-principal">
+                    <a href="#">💼 Empresas Legais • Cadastro e Funcionamento</a>
+                    <div class="info">Postado por: Administrador • 26/04/2026</div>
+                </div>
+                <div class="estatisticas">Visualizações: 92 • Respostas: 11</div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>© 2026 Nivora-RP • Todos os direitos reservados</p>
+        <p>Endereço do Servidor: SEU_IP:SUA_PORTA</p>
+    </footer>
+
+</body>
+</html>
